@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giza</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://craignyu.github.io/aframep5/libraries/aframep5-v2.2.js"></script>
+    <script src="sketch.js"></script>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <a-scene id="VRScene">
+        <a-assets id="VRAssets">
+            
+            <img src="images/iron_block.png" id="iron">
+            <img src="images/gold_block.png" id="gold">
+            <img src="images/stonebrick_mossy.png" id="stone">
+            <img src="images/equirectangular_spain1.jpg" id="sky1">
+            
+            <img src="images/pyramid.jpg" id="pyramid">
+            <img src="images/sky.jpg" id="sky">
+            <img src="images/sand.jpg" id="sand">
+            <img src="images/mummy_u1_v1.jpeg" id="mummyTexture">
+            <img src="images/SphinxCrystalPalacePark02.jpg" id="sphTexture">
+
+            <a-asset-item id="floatingItem" src="images/mummy.obj"></a-asset-item>
+            <a-asset-item id="floatingItemMTL" src="images/mummy.mtl"></a-asset-item>
+            <a-asset-item id="sphinxModel" src="images/SphinxCrystalPalacePark02.obj"></a-asset-item>
+            <a-asset-item id="sphinxModelMTL" src="images/SphinxCrystalPalacePark02.mtl"></a-asset-item>
+
+            
+        </a-assets>
+
+       
+
+    </a-scene>
+</body>
+</html>

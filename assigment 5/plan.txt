@@ -1,0 +1,23 @@
+You need to create a world that represents ancient Egypt
+all assets will be in a foler called assets
+the floor should have a sandy texture that will be provided by a picture with a name "sand"
+the sky will also be a 3dpicture with a name "sky"
+you should build three pyramids with different sizes that will have also have a picture of them named "pictures"
+the sphinx will be taken by sketch fab online and be put in the world
+make a lot of flooding items in different x, y, and z coordinates these items will be picked from sketchfab and put randomly as shapes
+make a path by highlighting the color on the floor.
+make a secret place upstairs that you can only go to if you preseed somewhere then you go there
+
+
+
+
+goals:
+Use at least 5 of the geometric primitives supported by A-Frame
+Create at least one object in your world that uses Object Oriented Programming	
+
+
+
+
+
+
+

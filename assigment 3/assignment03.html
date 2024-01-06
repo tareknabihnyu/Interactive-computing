@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 03 - Street Racer Game</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212; /* Dark background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #f4f4f4; /* light text */
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1400px;
+            background-color: #1f1f1f;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 80%;
+            max-width: 500px;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        a {
+            color: #f1c40f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        canvas {
+            width: 400px;
+            height: 550px;
+            /* flex: 2; */
+            border: 1px solid #f1c40f; 
+            margin: 0 20px;
+            border-radius: 10px;
+            min-height: 400px;
+        }
+
+        .dashboard {
+            flex: 1;
+            background-color: #222; /* dark gray background */
+            padding: 20px;
+            border-radius: 10px;
+            color: #f1c40f; /* yellow text */
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Street Racer: Behind the Scenes</h1>
+        <img src="gameplay.png" alt="Street Racer Gameplay Screenshot">
+        <p>
+            Inspired by classic arcade racing games, Street Racer was created to immerse players in a fast-paced world where reflexes and strategy combine. I wanted to bring a bit of nostalgia to the new age, sprinkling it with modern coding techniques.
+            The design process started with the vision of a dynamic, yet straightforward interface, easy enough for anyone to understand, yet challenging enough to keep seasoned players engaged. The game mechanics are based on the balance between speed and strategy, making each gameplay experience unique.
+        </p>
+        <p>
+            <strong>Want to give it a try? <a href="index.html">Play Street Racer now!</a></strong>
+        </p>
+    </div>
+    <div class="dashboard"><canvas></canvas></div>
+
+    <!-- Link to JS game file -->
+    <script src="sketch.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 960px;
+            margin: auto;
+            padding: 20px;
+        }
+        .header, .overview, .game-image, .game-link {
+            margin: 20px 0;
+            text-align: center;
+        }
+        h1, h2 {
+            color: #444;
+        }
+        p {
+            line-height: 1.6;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>About Maze Game with Hand Tracking</h1>
+            <p>A brief overview of our interactive hand tracking maze game.</p>
+        </div>
+        <div class="overview">
+            <h2>Design Process</h2>
+            <p>The design process began with the aim of creating an interactive game that could be controlled through hand gestures. 
+            By leveraging the p5.js and ml5.js libraries, we were able to integrate hand tracking functionality that interacts with the game's maze in real-time. 
+            The game's layout was meticulously crafted to provide an engaging and challenging experience, ensuring that each level would bring a new sense of discovery and excitement. 
+            The end result is a game that is not only fun to play but also showcases the possibilities of integrating machine learning into web-based applications.</p>
+        </div>
+        <div class="game-image">
+            <img src="game.png" alt="Maze Game Screenshot">
+        </div>
+        <div class="game-link">
+            <p>Ready to experience the game? <a href="index.html" target="_blank">Play it here</a>.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racing Game</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000; /* black background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #f4f4f4; /* light text */
+        }
+        
+        .container {
+            display: flex;
+            max-width: 1400px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            align-items: center; /* Add this line to vertically center children */
+                
+        }
+
+        canvas {
+            width: 400px;
+            height: 550px;
+            /* flex: 2; */
+            border: 1px solid #f1c40f; 
+            margin: 0 20px;
+            border-radius: 10px;
+            min-height: 400px;
+        }
+
+
+
+        /* canvas {
+            flex: 2;
+            border: 1px solid #f1c40f; 
+            display: none; 
+            margin: 0 20px;
+            border-radius: 10px;
+            min-height: 400px; 
+        } */
+
+
+
+        .description {
+            flex: 1;
+            padding: 20px;
+            background-color: #222; /* dark gray background */
+            margin-right: 20px;
+            border-radius: 10px;
+            color: #f1c40f; /* yellow text */
+        }
+
+        .dashboard {
+            flex: 1;
+            background-color: #222; /* dark gray background */
+            padding: 20px;
+            border-radius: 10px;
+            color: #f1c40f; /* yellow text */
+        }
+
+        button {
+            padding: 5px 10px;
+            cursor: pointer;
+            background-color: #f1c40f; /* yellow background */
+            color: #222; /* dark text */
+            border: none;
+            display: none;
+            border-radius: 3px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        button:hover {
+            background-color: #d4a707;
+            color: #fff;
+        }
+
+
+        select, input[type="range"] {
+            width: 100%;
+            padding: 5px;
+            margin: 10px 0;
+            border-radius: 3px;
+        }
+
+        h2, p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="description">
+            <h2><a href="assignment03.html" style="color: #f1c40f; text-decoration: none;">Welcome to Street Racer!</a></h2>
+            <!-- <a href="assignment03.html" style="display: block; text-align: center; margin-top: 10px; text-decoration: underline; color: #f1c40f;">View Game Showcase</a> -->
+
+            <p>Navigate your car through the bustling traffic, avoiding collisions and scoring points. Adjust the difficulty, select your car's skin, and immerse yourself in the roaring world of car racing. Ready, set, race! (press on above for more info)</p>
+            <button id="startButton" onclick="startGame()">Start Game</button>
+        </div>
+        <!-- <canvas></canvas> -->
+        <div class="dashboard">
+            <div>Score: <span id="Score">0</span></div>
+            <div>High Score: <span id="highScore">0</span></div>
+            <div>
+                Sound: 
+                <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="1">
+            </div>
+            <div>
+                Choose Car Skin: 
+                <select id="carSkinSelector">
+                    <option value="0">Default</option>
+                    <option value="1">Skin 1</option>
+                    <option value="2">Skin 2</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!-- <a href="assignment03.html">Check out the Racing Game</a> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    
+    <script src="sketch.js"></script>
+
+    <script>
+        function startGame() {
+            //let canvasElement = document.querySelector('canvas');
+            //if (canvasElement) {
+            //    canvasElement.style.display = 'block'; // show the canvas
+            //}
+            document.getElementById('startButton').style.display = 'none'; // hide the start button
+        }
+
+    </script>
+</body>
+</html>
