@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Forest Zombie Invasion</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #fff;
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff5500;
+        }
+        #instructions {
+            background-color: #333;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19), 0px 6px 6px rgba(0, 0, 0, 0.23);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px; /* Increased from 600px to 800px */
+            font-size: 0.8em;
+        }
+        canvas {
+            display: block;
+            margin: 0 auto;
+            width: 800px;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Forest Zombie Invasion</h1>
+    <div id="instructions">
+        <h2>How to Play</h2>
+        <p><strong>Objective</strong>: Survive waves of zombies in a forest setting, using strategic movement and combat skills to stay alive.</p>
+        <p><strong>Controls</strong>:
+            <ul>
+                <li><strong>Movement</strong>: Use [WASD] or arrow keys to move around.</li>
+                <li><strong>Shoot</strong>: Click the left mouse button to shoot at zombies.</li>
+            </ul>
+        </p>
+        <p><strong>Gameplay Tips</strong>:
+            <ul>
+                <li><strong>Stay on the Move</strong>: Constant movement makes it harder for zombies to catch you.</li>
+                <li><strong>Use the Environment</strong>: Hide behind trees and use the terrain to your advantage.</li>
+                <li><strong>Watch for Different Zombies</strong>: Some may be faster or tougher. Adjust your strategy accordingly.</li>
+            </ul>
+        </p>
+        <p><strong>Progression</strong>: With each wave, zombies become tougher. Survive as long as you can and beat your high score!</p>
+    </div>
+    <main></main>
+    <script src="sketch.js"></script>
+</body>
+</html>
